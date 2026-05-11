@@ -4,321 +4,537 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Gaurav Pandya</title>
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <meta name="description" content="Gaurav Pandya - Senior Backend Developer with 10+ years of experience in PHP, Node.js, React, AWS, and cloud technologies.">
+    <meta name="author" content="Gaurav Pandya">
+    <title>Gaurav Pandya | Senior Developer</title>
 
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <style type="text/css">
-        .portfolio-box .portfolio-box-caption{
-            background: rgba(240,95,64,.9);
-            opacity: 0.9;
-        }
-    </style>
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
 </head>
 
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Gaurav pandya</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">My skills</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact me</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">GP<span class="accent">.</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="Resume_GAURAV.pdf" class="nav-link nav-cta" target="_blank">Resume</a></li>
+            </ul>
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Whats Up !!</h1>
-                <hr>
-                <p><b>My name is Gaurav Pandya<b></p>
-                <p>Developer at In10Media</p>
-
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Start</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Gaurav Pandya</h1>
+            <h2 class="hero-title">Senior Backend Developer</h2>
+            <p class="hero-description">
+                10+ years building scalable web applications, APIs, and cloud-native solutions. 
+                Specialized in PHP ecosystems, Node.js, and modern cloud infrastructure.
+            </p>
+            <div class="hero-cta">
+                <a href="#experience" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Companies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
             </div>
         </div>
-    </header>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-    <section class="bg-primary" id="about">
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">About Me !</h2>
-                    <hr class="light">
-                    <p class="text-faded"><I></I>I am creative, smart working, individual, who enjoy challenges. In addition to strong communication skills, I am able to work effectively in a team. I can also demonstrate advanced problem-solving skills and thrive under pressure. My drive and ambition ensure I am a valuable addition to any company</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a results-driven <strong>Senior Backend Developer</strong> based in Mumbai, India, 
+                        with a passion for building robust, scalable systems that power digital experiences for millions of users.
+                    </p>
+                    <p>
+                        Over the past decade, I've worked across OTT platforms, media entertainment, ad-tech, 
+                        and proptech industries — designing APIs, managing cloud deployments, integrating payment 
+                        gateways, and leading development teams.
+                    </p>
+                    <p>
+                        My expertise spans the full backend lifecycle: from architecting microservices and 
+                        building RESTful APIs to deploying on AWS/cloud infrastructure and implementing 
+                        CI/CD pipelines. I thrive in fast-paced environments where I can solve complex 
+                        problems and deliver measurable business impact.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fa fa-certificate"></i>
+                            <span>ITIL Certified (Foundation & Intermediate)</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>B.E. in Computer Science</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-expertise">
+                    <h3>Areas of Expertise</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fa fa-check"></i> Backend Architecture & API Design</li>
+                        <li><i class="fa fa-check"></i> Cloud Infrastructure (AWS, Alicloud)</li>
+                        <li><i class="fa fa-check"></i> Service & Project Management</li>
+                        <li><i class="fa fa-check"></i> Team Building & Training</li>
+                        <li><i class="fa fa-check"></i> Vendor & Client Management</li>
+                        <li><i class="fa fa-check"></i> AI/Chatbot Integration</li>
+                        <li><i class="fa fa-check"></i> Payment Gateway Integration</li>
+                        <li><i class="fa fa-check"></i> OTT & Media Platforms</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My skills</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-code wow bounceIn text-primary"></i>
-                        <h3>Back End</h3>
-                        <p class="text-muted">Laravel,CodeIgniter and Nodejs</p>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Uhomes -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="company">Uhomes.com</h3>
+                                <p class="role">Backend Developer</p>
+                            </div>
+                            <span class="duration">Jul 2024 – Present</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PHP (ThinkPHP)</span>
+                            <span>AWS</span>
+                            <span>MySQL</span>
+                            <span>Alicloud</span>
+                            <span>MNS/MQ</span>
+                            <span>Python</span>
+                            <span>Git</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Design, develop, and maintain server-side applications and APIs</li>
+                            <li>Built AI-powered assistants/chatbots for customer engagement</li>
+                            <li>Automated lead collection, FAQs, and support queries</li>
+                            <li>Integrated with WhatsApp, Twilio, and web widgets</li>
+                            <li>Deploy services on AWS/Cloud servers, monitor logs and server health</li>
+                            <li>Integrate third-party services including payment gateways and CRM</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-database wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Database</h3>
-                        <p class="text-muted">Mysql,Mongodb</p>
+
+                <!-- Entrata -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="company">Entrata India</h3>
+                                <p class="role">Sr. Developer</p>
+                            </div>
+                            <span class="duration">May 2023 – Jun 2024</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PHP (Symfony)</span>
+                            <span>AWS</span>
+                            <span>MySQL</span>
+                            <span>RabbitMQ</span>
+                            <span>Git</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Worked on internal accounts system architecture</li>
+                            <li>Managed modules for invoice processing and accounting tools</li>
+                            <li>Developed business cases with emphasis on ROI</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-css3  wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Front End</h3>
-                        <p class="text-muted">HTML, CSS, BootStrap, Ajax, JavaScript,Jquery,React</p>
+
+                <!-- In10 Media -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="company">In10 Media Pvt Ltd</h3>
+                                <p class="role">Sr. Developer</p>
+                            </div>
+                            <span class="duration">Apr 2021 – May 2023</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PHP (Laravel)</span>
+                            <span>Node.js</span>
+                            <span>React.js</span>
+                            <span>Cloud</span>
+                            <span>Git</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built Docubay website — backend APIs and web frontend</li>
+                            <li>WAP sites billing integration with multiple operators globally</li>
+                            <li>Service management: upload and transcoding of video content on CMS</li>
+                            <li>Server management and client interaction</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-genderless  wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>My Experience</h3>
-                        <p class="text-muted">WAP, VAS, Web Services and OTT Platforms</p>
+
+                <!-- Hungama -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="company">Hungama Digital Media Entertainment</h3>
+                                <p class="role">Sr. Developer</p>
+                            </div>
+                            <span class="duration">Oct 2018 – Apr 2021</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PHP (CodeIgniter)</span>
+                            <span>MySQL</span>
+                            <span>Jenkins</span>
+                            <span>Drupal</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Managed WAP sites development and billing integrations</li>
+                            <li>Integrated with multiple telecom operators worldwide</li>
+                            <li>Service management and client interaction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Salparni -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="company">Salparni Media Pvt Ltd</h3>
+                                <p class="role">Software Developer</p>
+                            </div>
+                            <span class="duration">Aug 2016 – Oct 2018</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PHP (CodeIgniter)</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built ad network platform with publisher/advertiser interaction</li>
+                            <li>WAP & VAS service development and maintenance</li>
+                            <li>Managed team and produced project status reports</li>
+                            <li>End-to-end incident management and infrastructure restoration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SK Mobi -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="company">SK Mobi Pvt Ltd</h3>
+                                <p class="role">PHP Developer (Fullstack)</p>
+                            </div>
+                            <span class="duration">Aug 2014 – Jul 2016</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PHP (CodeIgniter)</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>WAP service flow development and management</li>
+                            <li>SMS and text-based services (USSD, STK) implementation</li>
+                            <li>Billing integrations with Vodafone, Idea, Airtel (LAMP stack)</li>
+                            <li>Built automated reporting system with advanced features</li>
+                            <li>Content management system implementation</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My Portfolio</h2>
-                    <hr class="primary">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fa fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Symfony</span>
+                        <span class="skill-tag">CodeIgniter</span>
+                        <span class="skill-tag">ThinkPHP</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Drupal</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Bcrazy.in
-                                </div>
-                                <div class="project-name">
-                                   https://bcrazy.in
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Ajax</span>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Employee Management System
-                                </div>
-                                <div class="project-name">
-                                   https://aspire.tlcindia.in
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+                    <h3>Database & Messaging</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">MNS/MQ</span>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Hungama Play
-                                </div>
-                                <div class="project-name">
-                                   https://play.hungama.com
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fa fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Alicloud</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Linux/LAMP</span>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Adzcount Adnetwork Platform
-                                </div>
-                                <div class="project-name">
-                                    http://202.38.172.244/adz/ad/index.php/client/client/logout
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+                    <h3>Integrations</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Payment Gateways</span>
+                        <span class="skill-tag">Twilio</span>
+                        <span class="skill-tag">WhatsApp API</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">CRM Systems</span>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Music Portal
-                                </div>
-                                <div class="project-name">
-                                    http://ghaintjatt.com/
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Hungama Music
-                                </div>
-                                <div class="project-name">
-                                    http://hungama.com
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Docubay
-                                </div>
-                                <div class="project-name">
-                                    http://docubay.com/
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Epicon
-                                </div>
-                                <div class="project-name">
-                                    https://www.epicon.in/
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                   Next Project 
-                                </div>
-                                <div class="project-name">
-                                    Cooming soon...
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h3>Management</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">ITIL</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Client Interaction</span>
+                        <span class="skill-tag">Vendor Management</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2></h2>
-                <a href="#" class="btn btn-default btn-xl">All the way to top </a>        
-            </div>
-        </div>
-    </aside>
-    <section id="contact">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Communicate with Me </h2>
-                    <hr class="primary">
-                    <p>Thank You for visiting my profile !! That's great Give me a call or send me an email and I will get back to you ASAP!</p>
+            <h2 class="section-title">Notable Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <h3>Uhomes.com</h3>
+                    <p>AI-powered property platform with chatbots for customer engagement, automated lead collection, and multi-channel integrations (WhatsApp, Twilio).</p>
+                    <div class="project-tech">
+                        <span>ThinkPHP</span>
+                        <span>AWS</span>
+                        <span>Python</span>
+                        <span>AI/ML</span>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>+91-7718997748</p>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa fa-film"></i>
+                    </div>
+                    <h3>Docubay</h3>
+                    <p>Documentary streaming OTT platform — built backend APIs and web frontend for content delivery, user management, and subscription handling.</p>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>Cloud</span>
+                    </div>
+                    <a href="https://www.docubay.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-external-link"></i> Visit
+                    </a>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:grvpandya0@gmail.com">grvpandya0@gmail.com</a></p>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa fa-play-circle"></i>
+                    </div>
+                    <h3>Hungama Play & Music</h3>
+                    <p>India's leading OTT platform — managed WAP sites, billing integrations with global telecom operators, and content management systems.</p>
+                    <div class="project-tech">
+                        <span>CodeIgniter</span>
+                        <span>Drupal</span>
+                        <span>Jenkins</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="https://www.hungama.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-external-link"></i> Visit
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa fa-video-camera"></i>
+                    </div>
+                    <h3>Epicon</h3>
+                    <p>Premium short-form video streaming platform — contributed to backend services and content delivery infrastructure.</p>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>Node.js</span>
+                        <span>Cloud</span>
+                    </div>
+                    <a href="https://www.epicon.in" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-external-link"></i> Visit
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa fa-building"></i>
+                    </div>
+                    <h3>Entrata Accounts System</h3>
+                    <p>Internal accounting platform — built invoice processing modules and financial tools for property management software.</p>
+                    <div class="project-tech">
+                        <span>Symfony</span>
+                        <span>RabbitMQ</span>
+                        <span>AWS</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa fa-bar-chart"></i>
+                    </div>
+                    <h3>Adzcount Ad Network</h3>
+                    <p>Full ad network platform connecting publishers and advertisers with campaign management, reporting, and analytics.</p>
+                    <div class="project-tech">
+                        <span>CodeIgniter</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-subtitle">
+                Interested in working together? Feel free to reach out.
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:grvpandya0@gmail.com" class="contact-card">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>grvpandya0@gmail.com</p>
+                </a>
+                <a href="tel:+917718997748" class="contact-card">
+                    <i class="fa fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 7718997748</p>
+                </a>
+                <a href="https://in.linkedin.com/in/gaurav-pandya-94469585" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>gaurav-pandya</p>
+                </a>
+                <a href="https://github.com/grvpandya" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>grvpandya</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gaurav Pandya. Built with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/portfolio.js"></script>
 </body>
 </html>
