@@ -839,6 +839,12 @@ body {
 /* ============================================
    Animations
    ============================================ */
+
+.highlight-text {
+    color: var(--accent-light);
+    font-weight: 600;
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
